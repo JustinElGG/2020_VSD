@@ -1,0 +1,24 @@
+
+Initializing...
+lc_shell> ls
+.                 lc_command.log  sram_1024.v       sram_1024_WC.lib
+..                lc_output.txt   sram_1024_BC.db   sram_1024_rtl.sv
+U18MemakerLEF.sh  sram_1024.gds   sram_1024_BC.lib
+fsa0m_a_su.hcell  sram_1024.lef   sram_1024_TC.lib
+lc_shell> read_lib sram_1024_WC.lib
+Reading '/home/user2/vsd20/vsd2005/Desktop/VLSILAB_Final_Project_Merge/sim/sram_1024/sram_1024_WC.lib' ...
+Warning: Line 45, The default_operating_conditions is not defined. operating_conditions 'WCCOM' is set
+        as the default_operating_conditions. (LBDB-663)
+Warning: Line 45, The 'internal_power_calculation' attribute in char_config group is required for NLPM library. 
+        No default can be applied to this attribute. (LBDB-366)
+Technology library 'sram_1024_WC' read successfully
+1
+lc_shell> write_lib sram_1024_WC -format db -output sram_1024_WC.db
+Wrote the 'sram_1024_WC' library to '/home/user2/vsd20/vsd2005/Desktop/VLSILAB_Final_Project_Merge/sim/sram_1024/sram_1024_WC.db' successfully
+1
+lc_shell> exit
+Maximum memory usage for this session: 64.26 MB
+CPU usage for this session:      3 seconds (  0.00 hours)
+Elapsed time for this session:    140 seconds (  0.04 hours)
+Thank you for using Library Compiler.
+

@@ -1,0 +1,715 @@
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 {/home/ryanhuang/Desktop/hw4_shell/WAVE/top_golden.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/AXI"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/CPU1"
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/CPU_wrapper/CPU1/clk} \
+{/top_tb/TOP/CPU_wrapper/CPU1/pc_next\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/CPU1/ID_ins\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvGetSignalClose -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSetCursor -win $_nWave1 70521201.987364 -snap {("G1" 2)}
+wvSetCursor -win $_nWave1 70524020.722600 -snap {("G1" 2)}
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvSetMarker -win $_nWave1 -keepViewRange -name "M1" 70524826.075524
+wvSetMarker -win $_nWave1 -keepViewRange -name "M1" 70524750.000000
+wvSelectGroup -win $_nWave1 {G1}
+wvZoomIn -win $_nWave1
+wvSetCursor -win $_nWave1 70500816.491462 -snap {("G1" 2)}
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/CPU1"
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/CPU_wrapper/CPU1/clk} \
+{/top_tb/TOP/CPU_wrapper/CPU1/pc_next\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/CPU1/pc\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/CPU1/ID_ins\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvUnselectUserMarker -win $_nWave1
+wvSelectUserMarker -win $_nWave1 -name "M1"
+wvUnselectUserMarker -win $_nWave1
+wvUnselectUserMarker -win $_nWave1
+wvSetSearchMode -win $_nWave1 -value 
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvSetSearchMode -win $_nWave1 -value 2b0
+wvSearchPrev -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchNext -win $_nWave1
+wvSearchPrev -win $_nWave1
+wvSetMarker -win $_nWave1 -keepViewRange -name "XXXX_XXXX" 70524750.000000 \
+           ID_GREEN5 long_dashed
+wvUnselectUserMarker -win $_nWave1
+wvSetMarker -win $_nWave1 -keepViewRange -name "XXXX_XXXX" 70545750.000000
+wvSetCursor -win $_nWave1 70554317.092936 -snap {("G2" 0)}
+wvDeleteMarker -win $_nWave1 "M1"
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSelectGroup -win $_nWave1 {G2}
+wvSetPosition -win $_nWave1 {("G2" 0)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/CPU1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/CPU1"
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/CPU1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/CPU1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/L1CI"
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/CPU_wrapper/CPU1/clk} \
+{/top_tb/TOP/CPU_wrapper/CPU1/pc\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/CPU1/ID_ins\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/L1CI/core_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvGetSignalClose -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/CPU1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/L1CI"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/CPU1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper"
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/CPU_wrapper/CPU1/clk} \
+{/top_tb/TOP/CPU_wrapper/CPU1/pc\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/CPU1/ID_ins\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/L1CI/core_out\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/Icache_ReadData\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvGetSignalClose -win $_nWave1
+wvSetCursor -win $_nWave1 70521468.760523 -snap {("G1" 3)}
+wvSetCursor -win $_nWave1 70524790.841337 -snap {("G1" 3)}
+wvSetCursor -win $_nWave1 70522274.113447 -snap {("G1" 3)}
+wvSetCursor -win $_nWave1 70518750.694402 -snap {("G1" 3)}
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/CPU1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/L1CI"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/CPU1"
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/CPU_wrapper/CPU1/clk} \
+{/top_tb/TOP/CPU_wrapper/CPU1/pc\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/CPU1/ID_ins\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/L1CI/core_out\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/Icache_ReadData\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/CPU1/return_intr} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 6 )} 
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvGetSignalClose -win $_nWave1
+wvSetCursor -win $_nWave1 70527307.569226
+wvSetCursor -win $_nWave1 70540394.554251
+wvSetCursor -win $_nWave1 70548649.421728
+wvSetCursor -win $_nWave1 70541199.907175
+wvSelectSignal -win $_nWave1 {( "G1" 6 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/CPU1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/L1CI"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/CPU1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/CPU1/IF_ID_Reg"
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/CPU_wrapper/CPU1/clk} \
+{/top_tb/TOP/CPU_wrapper/CPU1/pc\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/CPU1/ID_ins\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/L1CI/core_out\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/Icache_ReadData\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/CPU1/IF_ID_Reg/ins_tmp\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/CPU1/return_intr} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 6 )} 
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvGetSignalClose -win $_nWave1
+wvSelectGroup -win $_nWave1 {G2}
+wvSelectSignal -win $_nWave1 {( "G1" 7 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 6 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 7 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 6 )} 
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/CPU1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/L1CI"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/CPU1/IF_ID_Reg"
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/CPU_wrapper/CPU1/clk} \
+{/top_tb/TOP/CPU_wrapper/CPU1/pc\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/CPU1/ID_ins\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/L1CI/core_out\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/Icache_ReadData\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/CPU1/IF_ID_Reg/ins_tmp\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/CPU1/IF_ID_Reg/ins_out\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/CPU1/return_intr} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 7 )} 
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 8 )} 
+wvSetCursor -win $_nWave1 70542709.943909 -snap {("G1" 4)}
+wvSelectSignal -win $_nWave1 {( "G1" 8 )} 
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/CPU1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/CPU1/IF_ID_Reg"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/L1CI"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/CPU1/IF_ID_Reg"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/CPU1"
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/CPU_wrapper/CPU1/clk} \
+{/top_tb/TOP/CPU_wrapper/CPU1/pc\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/CPU1/ID_ins\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/L1CI/core_out\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/Icache_ReadData\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/CPU1/IF_ID_Reg/ins_tmp\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/CPU1/IF_ID_Reg/ins_out\[31:0\]} \
+{/top_tb/TOP/CPU_wrapper/CPU1/flush} \
+{/top_tb/TOP/CPU_wrapper/CPU1/flush_second} \
+{/top_tb/TOP/CPU_wrapper/CPU1/return_intr} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 8 9 )} 
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 10 )} 
+wvSelectGroup -win $_nWave1 {G2}
+wvSetPosition -win $_nWave1 {("G2" 0)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/CPU1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/CPU1/IF_ID_Reg"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/L1CI"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/CPU_wrapper/CPU1"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 162383933.433840 -snap {("G1" 2)}
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper/L1CI"
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/cpu_wrapper/CPU1/clk} \
+{/top_tb/TOP/cpu_wrapper/CPU1/PC\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/CPU1/ID_Instruction\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/L1CI/core_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/top_tb/TOP/axi/arbiter/CS_R\[4:0\]} \
+{/top_tb/TOP/axi/arbiter/CS_W\[4:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/top_tb/TOP/cpu_wrapper/CPU1/interrupt} \
+{/top_tb/TOP/cpu_wrapper/CPU1/interrupt_taken} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G3" 2 )} 
+wvSetPosition -win $_nWave1 {("G3" 2)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/axi"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper/CPU1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper/L1CI"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper/CPU1"
+wvSetPosition -win $_nWave1 {("G3" 3)}
+wvSetPosition -win $_nWave1 {("G3" 3)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/cpu_wrapper/CPU1/clk} \
+{/top_tb/TOP/cpu_wrapper/CPU1/PC\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/CPU1/ID_Instruction\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/L1CI/core_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/top_tb/TOP/axi/arbiter/CS_R\[4:0\]} \
+{/top_tb/TOP/axi/arbiter/CS_W\[4:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/top_tb/TOP/cpu_wrapper/CPU1/interrupt} \
+{/top_tb/TOP/cpu_wrapper/CPU1/interrupt_taken} \
+{/top_tb/TOP/cpu_wrapper/CPU1/interrupt_return} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+}
+wvSelectSignal -win $_nWave1 {( "G3" 3 )} 
+wvSetPosition -win $_nWave1 {("G3" 3)}
+wvGetSignalClose -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/axi"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper/CPU1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper/L1CI"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper/CPU1"
+wvSetPosition -win $_nWave1 {("G3" 5)}
+wvSetPosition -win $_nWave1 {("G3" 5)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/cpu_wrapper/CPU1/clk} \
+{/top_tb/TOP/cpu_wrapper/CPU1/PC\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/CPU1/ID_Instruction\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/L1CI/core_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/top_tb/TOP/axi/arbiter/CS_R\[4:0\]} \
+{/top_tb/TOP/axi/arbiter/CS_W\[4:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/top_tb/TOP/cpu_wrapper/CPU1/interrupt} \
+{/top_tb/TOP/cpu_wrapper/CPU1/interrupt_taken} \
+{/top_tb/TOP/cpu_wrapper/CPU1/interrupt_return} \
+{/top_tb/TOP/cpu_wrapper/CPU1/flush} \
+{/top_tb/TOP/cpu_wrapper/CPU1/flush_data} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+}
+wvSelectSignal -win $_nWave1 {( "G3" 4 5 )} 
+wvSetPosition -win $_nWave1 {("G3" 5)}
+wvGetSignalClose -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper/CPU1"
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/cpu_wrapper/CPU1/clk} \
+{/top_tb/TOP/cpu_wrapper/CPU1/PC\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/CPU1/Instruction\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/CPU1/ID_Instruction\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/L1CI/core_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/top_tb/TOP/axi/arbiter/CS_R\[4:0\]} \
+{/top_tb/TOP/axi/arbiter/CS_W\[4:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/top_tb/TOP/cpu_wrapper/CPU1/interrupt} \
+{/top_tb/TOP/cpu_wrapper/CPU1/interrupt_taken} \
+{/top_tb/TOP/cpu_wrapper/CPU1/interrupt_return} \
+{/top_tb/TOP/cpu_wrapper/CPU1/flush} \
+{/top_tb/TOP/cpu_wrapper/CPU1/flush_data} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvGetSignalClose -win $_nWave1
+wvSelectGroup -win $_nWave1 {G3}
+wvSetPosition -win $_nWave1 {("G3" 0)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/axi"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper/CPU1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper/L1CI"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper/CPU1"
+wvSetPosition -win $_nWave1 {("G3" 1)}
+wvSetPosition -win $_nWave1 {("G3" 1)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/cpu_wrapper/CPU1/clk} \
+{/top_tb/TOP/cpu_wrapper/CPU1/PC\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/CPU1/Instruction\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/CPU1/ID_Instruction\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/L1CI/core_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/top_tb/TOP/axi/arbiter/CS_R\[4:0\]} \
+{/top_tb/TOP/axi/arbiter/CS_W\[4:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/top_tb/TOP/cpu_wrapper/CPU1/WFI_stall} \
+{/top_tb/TOP/cpu_wrapper/CPU1/interrupt} \
+{/top_tb/TOP/cpu_wrapper/CPU1/interrupt_taken} \
+{/top_tb/TOP/cpu_wrapper/CPU1/interrupt_return} \
+{/top_tb/TOP/cpu_wrapper/CPU1/flush} \
+{/top_tb/TOP/cpu_wrapper/CPU1/flush_data} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+}
+wvSelectSignal -win $_nWave1 {( "G3" 1 )} 
+wvSetPosition -win $_nWave1 {("G3" 1)}
+wvGetSignalClose -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/axi"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper/CPU1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper/L1CI"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper/CPU1"
+wvSetPosition -win $_nWave1 {("G3" 2)}
+wvSetPosition -win $_nWave1 {("G3" 2)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/cpu_wrapper/CPU1/clk} \
+{/top_tb/TOP/cpu_wrapper/CPU1/PC\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/CPU1/Instruction\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/CPU1/ID_Instruction\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/L1CI/core_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/top_tb/TOP/axi/arbiter/CS_R\[4:0\]} \
+{/top_tb/TOP/axi/arbiter/CS_W\[4:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/top_tb/TOP/cpu_wrapper/CPU1/WFI_stall} \
+{/top_tb/TOP/cpu_wrapper/CPU1/WAIT_MEM} \
+{/top_tb/TOP/cpu_wrapper/CPU1/interrupt} \
+{/top_tb/TOP/cpu_wrapper/CPU1/interrupt_taken} \
+{/top_tb/TOP/cpu_wrapper/CPU1/interrupt_return} \
+{/top_tb/TOP/cpu_wrapper/CPU1/flush} \
+{/top_tb/TOP/cpu_wrapper/CPU1/flush_data} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+}
+wvSelectSignal -win $_nWave1 {( "G3" 2 )} 
+wvSetPosition -win $_nWave1 {("G3" 2)}
+wvGetSignalClose -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomIn -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvJumpToolbarUserMarker -win $_nWave1 -name "XXXX_XXXX"
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvJumpToolbarUserMarker -win $_nWave1 -name "XXXX_XXXX"
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 1 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G3" 1 )} 
+wvSelectSignal -win $_nWave1 {( "G3" 2 )} 
+wvZoomOut -win $_nWave1
+wvSelectGroup -win $_nWave1 {G4}
+wvSelectSignal -win $_nWave1 {( "G3" 2 )} 
+wvSetPosition -win $_nWave1 {("G3" 2)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper/CPU1"
+wvGetSignalSetSignalFilter -win $_nWave1 "flush"
+wvSetPosition -win $_nWave1 {("G3" 4)}
+wvSetPosition -win $_nWave1 {("G3" 4)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/cpu_wrapper/CPU1/clk} \
+{/top_tb/TOP/cpu_wrapper/CPU1/PC\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/CPU1/ID_Instruction\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/L1CI/core_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/top_tb/TOP/axi/arbiter/CS_R\[4:0\]} \
+{/top_tb/TOP/axi/arbiter/CS_W\[4:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/top_tb/TOP/cpu_wrapper/CPU1/interrupt} \
+{/top_tb/TOP/cpu_wrapper/CPU1/interrupt_taken} \
+{/top_tb/TOP/cpu_wrapper/CPU1/flush} \
+{/top_tb/TOP/cpu_wrapper/CPU1/MEM_flush} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+}
+wvSelectSignal -win $_nWave1 {( "G3" 4 )} 
+wvSetPosition -win $_nWave1 {("G3" 4)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G3" 3 )} 
+wvSetPosition -win $_nWave1 {("G3" 3)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/axi"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper/CPU1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper/L1CI"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper/CPU1"
+wvSetPosition -win $_nWave1 {("G3" 5)}
+wvSetPosition -win $_nWave1 {("G3" 5)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/cpu_wrapper/CPU1/clk} \
+{/top_tb/TOP/cpu_wrapper/CPU1/PC\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/CPU1/ID_Instruction\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/L1CI/core_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/top_tb/TOP/axi/arbiter/CS_R\[4:0\]} \
+{/top_tb/TOP/axi/arbiter/CS_W\[4:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/top_tb/TOP/cpu_wrapper/CPU1/interrupt} \
+{/top_tb/TOP/cpu_wrapper/CPU1/interrupt_taken} \
+{/top_tb/TOP/cpu_wrapper/CPU1/flush} \
+{/top_tb/TOP/cpu_wrapper/CPU1/WB_stall} \
+{/top_tb/TOP/cpu_wrapper/CPU1/WFI_stall} \
+{/top_tb/TOP/cpu_wrapper/CPU1/MEM_flush} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+}
+wvSelectSignal -win $_nWave1 {( "G3" 5 )} 
+wvSetPosition -win $_nWave1 {("G3" 5)}
+wvGetSignalClose -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/axi"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper/CPU1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper/L1CI"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper/CPU1"
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/axi"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper/CPU1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper/L1CI"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper/CPU1"
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/cpu_wrapper/CPU1/clk} \
+{/top_tb/TOP/cpu_wrapper/CPU1/PC\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/CPU1/Instruction\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/CPU1/ID_Instruction\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/L1CI/core_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/top_tb/TOP/axi/arbiter/CS_R\[4:0\]} \
+{/top_tb/TOP/axi/arbiter/CS_W\[4:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/top_tb/TOP/cpu_wrapper/CPU1/interrupt} \
+{/top_tb/TOP/cpu_wrapper/CPU1/interrupt_taken} \
+{/top_tb/TOP/cpu_wrapper/CPU1/flush} \
+{/top_tb/TOP/cpu_wrapper/CPU1/WB_stall} \
+{/top_tb/TOP/cpu_wrapper/CPU1/WFI_stall} \
+{/top_tb/TOP/cpu_wrapper/CPU1/MEM_flush} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G3" 6 )} 
+wvSetPosition -win $_nWave1 {("G3" 6)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/top_tb"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/axi"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper/CPU1"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper/L1CI"
+wvGetSignalSetScope -win $_nWave1 "/top_tb/TOP/cpu_wrapper/CPU1"
+wvSetPosition -win $_nWave1 {("G3" 7)}
+wvSetPosition -win $_nWave1 {("G3" 7)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/top_tb/TOP/cpu_wrapper/CPU1/clk} \
+{/top_tb/TOP/cpu_wrapper/CPU1/PC\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/CPU1/Instruction\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/CPU1/ID_Instruction\[31:0\]} \
+{/top_tb/TOP/cpu_wrapper/L1CI/core_out\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/top_tb/TOP/axi/arbiter/CS_R\[4:0\]} \
+{/top_tb/TOP/axi/arbiter/CS_W\[4:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/top_tb/TOP/cpu_wrapper/CPU1/interrupt} \
+{/top_tb/TOP/cpu_wrapper/CPU1/interrupt_taken} \
+{/top_tb/TOP/cpu_wrapper/CPU1/flush} \
+{/top_tb/TOP/cpu_wrapper/CPU1/WB_stall} \
+{/top_tb/TOP/cpu_wrapper/CPU1/WFI_stall} \
+{/top_tb/TOP/cpu_wrapper/CPU1/MEM_flush} \
+{/top_tb/TOP/cpu_wrapper/CPU1/WAIT_MEM} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+}
+wvSelectSignal -win $_nWave1 {( "G3" 7 )} 
+wvSetPosition -win $_nWave1 {("G3" 7)}
+wvGetSignalClose -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G2" 1 )} 

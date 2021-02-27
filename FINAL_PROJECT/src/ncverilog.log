@@ -1,0 +1,224 @@
+ncverilog(64): 14.10-s005: (c) Copyright 1995-2014 Cadence Design Systems, Inc.
+TOOL:	ncverilog	14.10-s005: Started on Jan 13, 2021 at 23:18:45 CST
+ncverilog
+	+nc64bit
+	top.sv
+file: top.sv
+`include "AXI_define.svh"
+                        |
+ncvlog: *E,COFILX (AXI/AXI.sv,7|24): cannot open include file 'AXI_define.svh'.
+(`include file: AXI/AXI.sv line 7, file: top.sv line 3)
+`include "Arbiter.sv"
+                    |
+ncvlog: *E,COFILX (AXI/AXI.sv,8|20): cannot open include file 'Arbiter.sv'.
+(`include file: AXI/AXI.sv line 8, file: top.sv line 3)
+`include "DecoderM2S.sv"
+                       |
+ncvlog: *E,COFILX (AXI/AXI.sv,9|23): cannot open include file 'DecoderM2S.sv'.
+(`include file: AXI/AXI.sv line 9, file: top.sv line 3)
+`include "DecoderS2M.sv"
+                       |
+ncvlog: *E,COFILX (AXI/AXI.sv,10|23): cannot open include file 'DecoderS2M.sv'.
+(`include file: AXI/AXI.sv line 10, file: top.sv line 3)
+`include "MuxS2M.sv"
+                   |
+ncvlog: *E,COFILX (AXI/AXI.sv,11|19): cannot open include file 'MuxS2M.sv'.
+(`include file: AXI/AXI.sv line 11, file: top.sv line 3)
+`include "MuxM2S.sv"
+                   |
+ncvlog: *E,COFILX (AXI/AXI.sv,12|19): cannot open include file 'MuxM2S.sv'.
+(`include file: AXI/AXI.sv line 12, file: top.sv line 3)
+`include "DefaultSlave.sv"
+                         |
+ncvlog: *E,COFILX (AXI/AXI.sv,13|25): cannot open include file 'DefaultSlave.sv'.
+(`include file: AXI/AXI.sv line 13, file: top.sv line 3)
+	module worklib.AXI:sv
+		errors: 0, warnings: 0
+`include "AXI_define.svh"
+                        |
+ncvlog: *E,COFILX (CPU_wrapper.sv,1|24): cannot open include file 'AXI_define.svh'.
+(`include file: CPU_wrapper.sv line 1, file: top.sv line 4)
+	module worklib.Registers:sv
+		errors: 0, warnings: 0
+	module worklib.Control_unit:sv
+		errors: 0, warnings: 0
+	module worklib.ALU:sv
+		errors: 0, warnings: 0
+	module worklib.ALU_control_unit:sv
+		errors: 0, warnings: 0
+	module worklib.Imm_Gen:sv
+		errors: 0, warnings: 0
+	module worklib.Forward_unit:sv
+		errors: 0, warnings: 0
+	module worklib.Hazard_Detection:sv
+		errors: 0, warnings: 0
+	module worklib.CSR:sv
+		errors: 0, warnings: 0
+	module worklib.CPU:sv
+		errors: 0, warnings: 0
+`include "def.svh"
+                 |
+ncvlog: *E,COFILX (CPU_wrapper.sv,3|17): cannot open include file 'def.svh'.
+(`include file: CPU_wrapper.sv line 3, file: top.sv line 4)
+`include "def.svh"
+                 |
+ncvlog: *E,COFILX (L1C_inst.sv,7|17): cannot open include file 'def.svh'.
+(`include file: L1C_inst.sv line 7, `include file: CPU_wrapper.sv line 4, file: top.sv line 4)
+`define IDLE        4'd0
+                        |
+ncvlog: *W,MACRDF (L1C_inst.sv,8|24): text macro 'IDLE' redefined - replaced with new definition.
+(`include file: L1C_inst.sv line 8, `include file: CPU_wrapper.sv line 4, file: top.sv line 4)
+	module worklib.L1C_inst:sv
+		errors: 0, warnings: 0
+`include "def.svh"
+                 |
+ncvlog: *E,COFILX (L1C_data.sv,7|17): cannot open include file 'def.svh'.
+(`include file: L1C_data.sv line 7, `include file: CPU_wrapper.sv line 5, file: top.sv line 4)
+`define Read               4'd9
+                               |
+ncvlog: *W,MACRDF (L1C_data.sv,17|31): text macro 'Read' redefined - replaced with new definition.
+(`include file: L1C_data.sv line 17, `include file: CPU_wrapper.sv line 5, file: top.sv line 4)
+	module worklib.L1C_data:sv
+		errors: 0, warnings: 0
+`define IDLE      3'd0
+                      |
+ncvlog: *W,MACRDF (CPU_wrapper.sv,7|22): text macro 'IDLE' redefined - replaced with new definition.
+(`include file: CPU_wrapper.sv line 7, file: top.sv line 4)
+`define WriteAddr 3'd1
+                      |
+ncvlog: *W,MACRDF (CPU_wrapper.sv,8|22): text macro 'WriteAddr' redefined - replaced with new definition.
+(`include file: CPU_wrapper.sv line 8, file: top.sv line 4)
+`define WriteData 3'd2
+                      |
+ncvlog: *W,MACRDF (CPU_wrapper.sv,9|22): text macro 'WriteData' redefined - replaced with new definition.
+(`include file: CPU_wrapper.sv line 9, file: top.sv line 4)
+`define WriteResp 3'd3
+                      |
+ncvlog: *W,MACRDF (CPU_wrapper.sv,10|22): text macro 'WriteResp' redefined - replaced with new definition.
+(`include file: CPU_wrapper.sv line 10, file: top.sv line 4)
+`define ReadAddr  3'd4
+                      |
+ncvlog: *W,MACRDF (CPU_wrapper.sv,11|22): text macro 'ReadAddr' redefined - replaced with new definition.
+(`include file: CPU_wrapper.sv line 11, file: top.sv line 4)
+`define ReadData  3'd5
+                      |
+ncvlog: *W,MACRDF (CPU_wrapper.sv,12|22): text macro 'ReadData' redefined - replaced with new definition.
+(`include file: CPU_wrapper.sv line 12, file: top.sv line 4)
+`define Buffer    3'd6
+                      |
+ncvlog: *W,MACRDF (CPU_wrapper.sv,13|22): text macro 'Buffer' redefined - replaced with new definition.
+(`include file: CPU_wrapper.sv line 13, file: top.sv line 4)
+	module worklib.CPU_wrapper:sv
+		errors: 0, warnings: 0
+`include "AXI_define.svh"
+                        |
+ncvlog: *E,COFILX (SRAM_wrapper.sv,1|24): cannot open include file 'AXI_define.svh'.
+(`include file: SRAM_wrapper.sv line 1, file: top.sv line 5)
+	module worklib.SRAM_wrapper:sv
+		errors: 0, warnings: 0
+`include "sign_processing_unit.sv"
+                                 |
+ncvlog: *E,COFILX (IP/IP_top.sv,1|33): cannot open include file 'sign_processing_unit.sv'.
+(`include file: IP/IP_top.sv line 1, `include file: S_IP_Wrapper.sv line 1, file: top.sv line 6)
+`include "BF2.sv"
+                |
+ncvlog: *E,COFILX (IP/IP_top.sv,2|16): cannot open include file 'BF2.sv'.
+(`include file: IP/IP_top.sv line 2, `include file: S_IP_Wrapper.sv line 1, file: top.sv line 6)
+`include "complex_mul.sv"
+                        |
+ncvlog: *E,COFILX (IP/IP_top.sv,3|24): cannot open include file 'complex_mul.sv'.
+(`include file: IP/IP_top.sv line 3, `include file: S_IP_Wrapper.sv line 1, file: top.sv line 6)
+`include "FFT_32.sv"
+                   |
+ncvlog: *E,COFILX (IP/IP_top.sv,4|19): cannot open include file 'FFT_32.sv'.
+(`include file: IP/IP_top.sv line 4, `include file: S_IP_Wrapper.sv line 1, file: top.sv line 6)
+`include "re_index.sv"
+                     |
+ncvlog: *E,COFILX (IP/IP_top.sv,5|21): cannot open include file 're_index.sv'.
+(`include file: IP/IP_top.sv line 5, `include file: S_IP_Wrapper.sv line 1, file: top.sv line 6)
+`include "FFT_32_32.sv"
+                      |
+ncvlog: *E,COFILX (IP/IP_top.sv,6|22): cannot open include file 'FFT_32_32.sv'.
+(`include file: IP/IP_top.sv line 6, `include file: S_IP_Wrapper.sv line 1, file: top.sv line 6)
+`include "IFFT_32_32.sv"
+                       |
+ncvlog: *E,COFILX (IP/IP_top.sv,7|23): cannot open include file 'IFFT_32_32.sv'.
+(`include file: IP/IP_top.sv line 7, `include file: S_IP_Wrapper.sv line 1, file: top.sv line 6)
+`include "controller.sv"
+                       |
+ncvlog: *E,COFILX (IP/IP_top.sv,8|23): cannot open include file 'controller.sv'.
+(`include file: IP/IP_top.sv line 8, `include file: S_IP_Wrapper.sv line 1, file: top.sv line 6)
+`include "divider_top.sv"
+                        |
+ncvlog: *E,COFILX (IP/IP_top.sv,9|24): cannot open include file 'divider_top.sv'.
+(`include file: IP/IP_top.sv line 9, `include file: S_IP_Wrapper.sv line 1, file: top.sv line 6)
+`include "complex_multiply.sv"
+                             |
+ncvlog: *E,COFILX (IP/IP_top.sv,10|29): cannot open include file 'complex_multiply.sv'.
+(`include file: IP/IP_top.sv line 10, `include file: S_IP_Wrapper.sv line 1, file: top.sv line 6)
+`include "sram/sram_1024_rtl.sv"
+                               |
+ncvlog: *E,COFILX (IP/IP_top.sv,11|31): cannot open include file 'sram/sram_1024_rtl.sv'.
+(`include file: IP/IP_top.sv line 11, `include file: S_IP_Wrapper.sv line 1, file: top.sv line 6)
+`include "sram/sram_1024_wrapper.sv"
+                                   |
+ncvlog: *E,COFILX (IP/IP_top.sv,12|35): cannot open include file 'sram/sram_1024_wrapper.sv'.
+(`include file: IP/IP_top.sv line 12, `include file: S_IP_Wrapper.sv line 1, file: top.sv line 6)
+	module worklib.IP_top:sv
+		errors: 0, warnings: 0
+	assign RDATA_S = (IP_sr1_oe_D1 == 1'b1) ? IP_sr1_data_out : reg_rdata;
+	                             |
+ncvlog: *E,UNDIDN (S_IP_Wrapper.sv,67|30): 'IP_sr1_oe_D1': undeclared identifier [12.5(IEEE)].
+(`include file: S_IP_Wrapper.sv line 250, file: top.sv line 6)
+	assign RDATA_S = (IP_sr1_oe_D1 == 1'b1) ? IP_sr1_data_out : reg_rdata;
+	                                                        |
+ncvlog: *E,UNDIDN (S_IP_Wrapper.sv,67|57): 'IP_sr1_data_out': undeclared identifier [12.5(IEEE)].
+(`include file: S_IP_Wrapper.sv line 250, file: top.sv line 6)
+	module worklib.S_IP_Wrapper:sv
+		errors: 2, warnings: 0
+	module worklib.data_array_wrapper:sv
+		errors: 0, warnings: 0
+	module worklib.tag_array_wrapper:sv
+		errors: 0, warnings: 0
+`include "AXI_define.svh"
+                        |
+ncvlog: *E,COFILX (ROM_wrapper.sv,1|24): cannot open include file 'AXI_define.svh'.
+(`include file: ROM_wrapper.sv line 1, file: top.sv line 9)
+	module worklib.ROM_wrapper:sv
+		errors: 0, warnings: 0
+`include "AXI_define.svh"
+                        |
+ncvlog: *E,COFILX (DRAM_wrapper.sv,1|24): cannot open include file 'AXI_define.svh'.
+(`include file: DRAM_wrapper.sv line 1, file: top.sv line 10)
+`define WriteResp        4'd6
+                             |
+ncvlog: *W,MACRDF (DRAM_wrapper.sv,10|29): text macro 'WriteResp' redefined - replaced with new definition.
+(`include file: DRAM_wrapper.sv line 10, file: top.sv line 10)
+`define ReadData         4'd12
+                              |
+ncvlog: *W,MACRDF (DRAM_wrapper.sv,16|30): text macro 'ReadData' redefined - replaced with new definition.
+(`include file: DRAM_wrapper.sv line 16, file: top.sv line 10)
+	module worklib.DRAM_wrapper:sv
+		errors: 0, warnings: 0
+`include "AXI_define.svh"
+                        |
+ncvlog: *E,COFILX (sctrl_wrapper.sv,1|24): cannot open include file 'AXI_define.svh'.
+(`include file: sctrl_wrapper.sv line 1, file: top.sv line 11)
+`define WriteResp 3'd3
+                      |
+ncvlog: *W,MACRDF (sctrl_wrapper.sv,5|22): text macro 'WriteResp' redefined - replaced with new definition.
+(`include file: sctrl_wrapper.sv line 5, file: top.sv line 11)
+`define ReadData  3'd5
+                      |
+ncvlog: *W,MACRDF (sctrl_wrapper.sv,7|22): text macro 'ReadData' redefined - replaced with new definition.
+(`include file: sctrl_wrapper.sv line 7, file: top.sv line 11)
+	module worklib.sctrl_wrapper:sv
+		errors: 0, warnings: 0
+	module worklib.sensor_ctrl:sv
+		errors: 0, warnings: 0
+	module worklib.top:sv
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 7, warnings: 13
+ncverilog: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+TOOL:	ncverilog	14.10-s005: Exiting on Jan 13, 2021 at 23:18:46 CST  (total: 00:00:01)
